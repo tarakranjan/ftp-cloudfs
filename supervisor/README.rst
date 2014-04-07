@@ -21,8 +21,7 @@ pip install supervisor
 
 copy supervisord.conf under /etc & copy supervisord-init under /etc/init.d/supervisord
 
-chmod ug+x /etc/init.d/supervisord
-chkconfig supervisord on
+chmod ug+x /etc/init.d/supervisord && chkconfig supervisord on
 
  ( plz don't install by Yum, the version is very old and buggy )
 
@@ -46,4 +45,4 @@ supervisorctl stop ftp-cloudfs
 ftp-cloudfs: stopped
 
 /etc/init.d/supervisord status
-ftp-cloudfs                              STOPPED    Jan 31 01:26 AM
+ftp-cloudfs                              STOPPED    Apr 07 20:25 PM
